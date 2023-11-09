@@ -13,7 +13,7 @@ import axios from "../api/axios";
 import styles from "./styles.module.css";
 //import PaystackPop from "@paystack/inline-js";
 import html2pdf from "html2pdf.js";
-import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
+// import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
 const LOGIN_URL = "/auth";
 
@@ -187,7 +187,7 @@ const Login = () => {
   }, []);
 
   const config = {
-    public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
+    // public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
     tx_ref: Date.now(),
     amount: process.env.REACT_APP_ONETIME_AMOUT,
     currency: "NGN",
@@ -204,7 +204,7 @@ const Login = () => {
     },
   };
 
-  const handleFlutterPayment = useFlutterwave(config);
+  // const handleFlutterPayment = useFlutterwave(config);
 
   const newVerification = async (e) => {
     e.preventDefault();

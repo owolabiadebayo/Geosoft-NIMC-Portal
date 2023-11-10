@@ -5,6 +5,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.18",
     "@paystack/inline-js": "^2.12.6",
     "@stripe/react-stripe-js": "^2.1.1",

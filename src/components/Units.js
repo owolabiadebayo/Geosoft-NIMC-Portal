@@ -35,7 +35,7 @@ import useAuth from "../hooks/useAuth";
 import Greeting from "./Greeting";
 import useAxiosPrivate from "../hooks/useAxiosPrivate";
 import axios from "axios";
-// import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
+import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
 
 const teams = [
   { name: "Change Password", to: "/password", icon: LockClosedIcon },
@@ -221,7 +221,7 @@ export default function PurchaseUnit() {
       ? [{ label: "Paystack", value: "paystack" }]
       : [{ label: "Stripe", value: "stripe" }];*/
 
-  // const paymentMethodOptions = [{ label: "Flutterwave", value: "flutterwave" }];
+  const paymentMethodOptions = [{ label: "Flutterwave", value: "flutterwave" }];
 
   const email = auth?.user;
   const [error, setError] = useState("");
@@ -352,7 +352,7 @@ export default function PurchaseUnit() {
   }
 
   const config = {
-    // public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
+    public_key: process.env.REACT_APP_FLUTTERWAVE_KEY,
     tx_ref: Date.now(),
     amount: totalAmount,
     currency: "NGN",
@@ -369,7 +369,7 @@ export default function PurchaseUnit() {
     },
   };
 
-  // const handleFlutterPayment = useFlutterwave(config);
+  const handleFlutterPayment = useFlutterwave(config);
 
   const handleSubmitflutterwave = async (e) => {
     e.preventDefault();

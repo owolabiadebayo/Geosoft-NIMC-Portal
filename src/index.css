@@ -39,7 +39,6 @@
 .home {
   display: flex;
   background-color: rgb(243, 250, 248);
-  height: 120vh;
 
   .left {
 
@@ -144,7 +143,6 @@
 .home-driver {
   display: flex;
   background-color: rgb(243, 250, 248);
-  height: 150vh;
 
   .left {
 

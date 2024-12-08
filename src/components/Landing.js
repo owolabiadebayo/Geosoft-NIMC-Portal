@@ -246,7 +246,7 @@ export default function Landing() {
                     <button className="get-started-btn px-6 py-3 bg-white text-green-600 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
                         Get Started
                     </button>
-                    <button className="login-btn px-6 py-3 bg-green-700 rounded-lg shadow-lg text-gray-100 hover:bg-green-800 hover:scale-105 transition-transform duration-300 ease-in-out">
+                    <button className="login-btn px-6 py-3 bg-green-700 rounded-lg shadow-lg text-gray-800 hover:bg-green-800 hover:scale-105 transition-transform duration-300 ease-in-out">
                         Login
                     </button>
                 </div>
